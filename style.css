@@ -62,7 +62,7 @@ button{
 ul li{
     list-style: none;
     font-size: 17px;
-    padding: 12px 8px 12px 50px;
+    padding: 15px 8px 12px 50px;
     user-select: none;
     cursor: pointer;
     position: relative;
@@ -93,10 +93,10 @@ ul li.checked::before{
 ul li span{
     position: absolute;
     right: 0;
-    top: 5px;
+    top: 7px;
     display: flex;
     width: 25px;
-    height: 25px;
-    padding: 3px;
+    height: 26px;
+    padding: 2px;
     margin-right: 18px;
 }

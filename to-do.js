@@ -25,22 +25,40 @@ function addTask() {
         editIcon.classList.add("edit", "text-controls");
         editIcon.src = "/images/pencil.png";
         editIcon.alt = "Edit task";
+        editIcon.onclick = "UpdateTask(this)"
         span.appendChild(editIcon);
 
         const deleteIcon = document.createElement("img");
         deleteIcon.classList.add("delete", "text-controls");
         deleteIcon.src = "/images/delete.png";
         deleteIcon.alt = "Delete task";
+        deleteIcon.onclick = "DeleteTask(this)"
         span.appendChild(deleteIcon);
 
         li.appendChild(span);
     }
     textBox.value = "";
+    saveData();
     
 }
 
 listContainer.addEventListener("click", function(e) {
     if(e.target.tagName === "LI"){
         e.target.classList.toggle("checked");
+        saveData();
     }
 }, false);
+
+// function saveData(){
+//     localStorage.setItem("data", listContainer.textContent);
+// }
+
+// function  UpdateTask(e) {
+//     if(e.parentElement)
+// }
+
+function  DeleteTask(e) {
+    const li = e.parentElement.parentElement;
+    li.remove();
+    saveData();
+}
