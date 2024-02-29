@@ -21,3 +21,9 @@ function addTask() {
     textBox.value = "";
 
 }
+
+listContainer.addEventListener("click", function(e) {
+    if(e.target.tagName === "LI"){
+        e.target.classList.toggle("checked");
+    }
+}, false);
