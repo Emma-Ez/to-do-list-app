@@ -88,3 +88,15 @@ ul li.checked{
 ul li.checked::before{
     background-image: url(images/checked.png);
 }
+
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 5px;
+    display: flex;
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    margin-right: 18px;
+}
