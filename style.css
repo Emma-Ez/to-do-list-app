@@ -90,7 +90,7 @@ ul li.checked::before{
 }
 
 
-ul li span{
+/* ul li span{
     position: absolute;
     right: 0;
     top: 7px;
@@ -99,4 +99,26 @@ ul li span{
     height: 26px;
     padding: 2px;
     margin-right: 18px;
+} */
+
+.edit{
+    position: absolute;
+    right: 0;
+    top: 7px;
+    display: flex;
+    width: 25px;
+    height: 26px;
+    padding: 4px;
+    margin-right: 40px;
+}
+
+.delete{
+    position: absolute;
+    right: 0;
+    top: 7px;
+    display: flex;
+    width: 25px;
+    height: 26px;
+    padding: 2px;
+    margin-right: 4px;
 }
